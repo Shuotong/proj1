@@ -1,5 +1,5 @@
 <h1> Hi </h1>
-<%= form_for @pokemon do |f| %>
-	Name: <%= f.text_field :name %>
-	<%= f.submit %>
+<%= simple_form_for @pokemon do |f| %>
+	<%= f.input :name %>
+	<%= f.button :submit %>
 <% end %>
